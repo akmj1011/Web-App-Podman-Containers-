@@ -66,7 +66,8 @@ Podman containers offers several services, including:
 ### GOAL: ###
 
 1.	Ensure the web application runs consistently across different environments using Podman containers.  	 	 	 	 	 	 	 	 	 	       
-2.	Optimize resource utilization and scaling capabilities of the web application with Podman.        3. Prioritize isolation and security features of Podman to protect the deployed web application.
+2.	Optimize resource utilization and scaling capabilities of the web application with Podman.
+3. Prioritize isolation and security features of Podman to protect the deployed web application.
  	 
  
 ### HARDWARE REQUIREMENT: ### 
