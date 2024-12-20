@@ -1,4 +1,4 @@
-# Deploying A Web App On Nginx Server Using Podman Contaiers #
+# Deploying A Web App On Nginx Server Using Podman Containers #
 ## TABLEOFCONTENTS ##
  
 ### 1 OBJECTIVE ###
