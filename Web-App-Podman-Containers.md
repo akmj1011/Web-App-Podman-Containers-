@@ -1,6 +1,6 @@
 # Deploying A Web App On A Nginx Server Using Podman Containers #
 
-## PODMAN INSTALLATION ##
+#### PODMAN INSTALLATION ####
  	 	 	 	 	 	 	 	 	 	 	 	      
 $ sudo dnf install podman 	 	 	 	 	 	 	 	 
  	               
