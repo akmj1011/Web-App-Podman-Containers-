@@ -1,7 +1,7 @@
 # Deploying A Web App On Nginx Server Using Podman Containers #
 ## TABLEOFCONTENTS ##
  
-### 1 OBJECTIVE ###
+### OBJECTIVE ###
 
 ●	AIM
 
@@ -11,13 +11,13 @@
 
 ●	GOAL
 
-### 2 REQUIREMENT ###
+### REQUIREMENT ###
 
 ●	HARWARE REQUIREMENT  
 
 ●	SOFTWARE REQUIREMENT
 
-### 3 PROCEDURE ###
+### PROCEDURE ###
 
 ●	PODMAN INSTALLATION 
 
@@ -43,7 +43,7 @@
 
 ●	VERIFIFCATION OF WEB SERVER 
 
-### 4 CONCLUSION ###
+### CONCLUSION ###
  
  
  
