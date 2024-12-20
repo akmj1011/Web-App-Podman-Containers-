@@ -1,49 +1,49 @@
-# Web-App-Podman-Containers-
+# Deploying A Web App On A Nginx Server Using Podman Containers #
 
-PODMAN INSTALLATION  	 	 	 	 	 	 
+## PODMAN INSTALLATION ##
  	 	 	 	 	 	 	 	 	 	 	 	      
 $ sudo dnf install podman 	 	 	 	 	 	 	 	 
  	               
  
  	                                                                                                                                      
-PODMAN CONFIGURATION  	 	 	 	 	 	 
+## PODMAN CONFIGURATION ## 	 	 	 	 	 	 
  	 	    	 	 	 	 	 	 	 	 	                   
 $ podman version 	 	 	 	 	 	 	 	 	 
  	 
   
-PULLING A CONTAINER IMAGE 
+## PULLING A CONTAINER IMAGE ## 
 $ podman pull nginx  	 
  	 	 	 	 	 	 	 	 	 
   
  
  
  
-RUNNING THE WEB SERVER 
+## RUNNING THE WEB SERVER ##
 $ podman run -d -p 8080:80 nginx 
   
-STATUS OF NGINX CONTAINER 
+## STATUS OF NGINX CONTAINER ## 
 $ podman ps 
   
-VERIFICATION OF WEB SERVER (NGINX) CONTAINER 
+## VERIFICATION OF WEB SERVER (NGINX) CONTAINER ## 
 $ curl -k http://localhost:8080 
   
  
  	 	 	 	 	 	 	 	 	 	 	 	 
-ALLOWING PORT 8080 THROUGH FIREWALL 
+## ALLOWING PORT 8080 THROUGH FIREWALL ## 
 $ sudo firewall-cmd --permanent --add-port=8080/tcp --add-port=80/tcp                                                                $ sudo firewall-cmd –reload 
  
  
   
-CUSTOMIZING THE WEB SERVER 
-DIRECTORY CREATION 
+## CUSTOMIZING THE WEB SERVER ##
+### DIRECTORY CREATION ###
 $ mkdir html_files 	 	 	 	 	 	 	 	 
  
   
-HTML FILE CREATION 	 	 	 	 	 	 	 	 	      
+### HTML FILE CREATION ###	 	 	 	 	 	 	 	 	      
 $ vim html_files/index.html 	 	 	 	 	 	 	 
  
   
-HTML FILE  	 	 	 	 	 	 	 	 	 
+### HTML FILE ###
 ``` 	 	 	 	 	 	 	 	 	 	            
 <!DOCTYPE html> 
 <html lang="en"> 
@@ -88,33 +88,27 @@ HTML FILE
 </body> 
 </html>
 ```
-REMOVING EXISTING CONTAINER 
+## REMOVING EXISTING CONTAINER ##
 $ podman ps 	 	 	 	 	 	 	 	 	 	 
- 
-  
 $ podman stop cool_grothendieck; podman rm e92bf61f9b8a 
   
-MOUNTING NEWLY CREATED HTML FILE 
+## MOUNTING NEWLY CREATED HTML FILE ## 
 $ podman run -d -p 8080:80 -v $(pwd)/html_files:/usr/share/nginx/html:Z nginx 
  
  
  	 	 	 	 	 	 	 	 	 	 	 
  	 	 	 	 	 	 	 	 	 	 	              
-CHECKING THE STATUS OF THE CONTAINER  	 	 
+## CHECKING THE STATUS OF THE CONTAINER ##  	 	 
  	 	 	 	 	 	 	 	 	 	                          
 $ podman ps 	 	 	 	 	 	 	 	 	 
  
  
  	 	 	 	 	 	 	 	 	 	 	              
-VERIFICATION OF THE WEB SERVER 	 	 	 	 
+## VERIFICATION OF THE WEB SERVER ## 	 	 	 	 
  	 	 	 	 	 	 	 	 	 	 	 	      
 $ curl -k http://localhost:8080 	 	 	 	 	 	 	 
  
  
- 	 	 	 	 	 	 	 	 	 	 
- 
-  
- 
-  
- 
- 
+
+
+
