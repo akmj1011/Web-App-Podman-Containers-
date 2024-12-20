@@ -1,6 +1,6 @@
 # Deploying A Web App On A Nginx Server Using Podman Containers #
 
-#### PODMAN INSTALLATION ####
+## PODMAN INSTALLATION ##
  	 	 	 	 	 	 	 	 	 	 	 	      
 $ sudo dnf install podman 	 	 	 	 	 	 	 	 
  	               
@@ -44,7 +44,7 @@ $ vim html_files/index.html
  
   
 ### HTML FILE ###
-``` 	 	 	 	 	 	 	 	 	 	            
+```cadence 	 	 	 	 	 	 	 	 	 	            
 <!DOCTYPE html> 
 <html lang="en"> 
 <head> 
